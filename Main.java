@@ -7,7 +7,7 @@ public class Main {
         System.out.println("1 – Pastel de carne \n");
         System.out.println("2 – Coxinha de frango \n");
         System.out.println("3 – Kibe com queijo \n");
-        System.out.print("Escolha uma opção: ");
+        System.out.print("Escolha uma opçao: ");
         opcao = leitorOpcao.nextInt();
         switch (opcao) {
             case 1:
