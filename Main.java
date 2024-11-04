@@ -1,27 +1,15 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        int opcao;
-        Scanner leitorOpcao = new Scanner(System.in);
-        System.out.println("1 – Pastel de carne \n");
-        System.out.println("2 – Coxinha de frango \n");
-        System.out.println("3 – Kibe com queijo \n");
-        System.out.print("Escolha uma opção: ");
-        opcao = leitorOpcao.nextInt();
-        switch (opcao) {
-            case 1:
-                System.out.println(" Pastel de carne escolhido.");
-                break;
-            case 2:
-                System.out.println(" Coxinha de frango escolhida.");
-                break;
-            case 3:
-                System.out.println(" Kibe com queijo .");
-                break;
-            default:
-                System.out.println("Opção invalida!");
-                break;
-        }
+    // Criação de objetos
+    Aluno aluno = new Aluno("João", 20, "A12345", 8.5, 9.0);
+    Professor professor = new Professor("Maria", 40, "Matemática");
+    Funcionario funcionario = new Funcionario("Carlos", 35, "Administração", 3500.00);
+    // Exibe as informações dos objetos
+    System.out.println("Informações do Aluno:");
+    aluno.exibirInfo();
+    System.out.println("\nInformações do Professor:");
+    professor.exibirInfo();
+    System.out.println("\nInformações do Funcionário:");
+    funcionario.exibirInfo();
     }
-}
+    }
